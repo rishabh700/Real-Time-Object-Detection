@@ -17,7 +17,7 @@ git clone https://github.com/rishabh700/Realtime-Object-Detection-and-Tracking.g
 cd Realtime-Object-Detection-and-Tracking
 ```
 
-2. **Create and Activate Conda Environment**: Create the environment using the "environment.yml" file:
+2. **Create and Activate Conda Environment**: Create the environment using the `environment.yml` file:
 ```sh
 conda env create -f environment.yml
 conda activate yolov11
@@ -25,7 +25,7 @@ conda activate yolov11
 
 ### Configuration
 
-1. **Edit ["Traffic_Counting.py"](Traffic_Counting.py)**: Open "Traffic_Counting.py" and set the following variables:
+1. **Edit `Traffic_Counting.py`**: Open `Traffic_Counting.py` and set the following variables:
     * `model_path`: Path to the YOLO model.
     * `video_path`: Path to the input video.
     * `out_put_video_path`: Path to the output video.
@@ -40,7 +40,7 @@ output_csv = r"C:\path\to\output\output.csv"
 ```
 
 2. **Running the Code**: 
-Run the "Traffic_Counting.py" script:
+Run the `Traffic_Counting.py` script:
 
 ```python
 python Traffic_Counting.py
