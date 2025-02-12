@@ -1,4 +1,4 @@
-# Real-Time-Traffic-Vehicle-Counting
+# Realtime-Object-Detection-and-Tracking
 A Modern Computer Vision Model whose main task is to gather infromation from Traffic videos. It counts the number of objects and also the type of objects that crosses a user defined line in the video and gives the output as a CSV.
 
 ## Getting Started
@@ -7,7 +7,7 @@ A Modern Computer Vision Model whose main task is to gather infromation from Tra
 
 Ensure you have the following installed:
 - [Anaconda](https://www.anaconda.com/products/distribution) (recommended) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-- Git
+
 
 ### Installation
 
@@ -25,7 +25,7 @@ conda activate yolov11
 
 ### Configuration
 
-1. **Edit "Traffic_Counting.py"**: Open "Traffic_Counting.py" and set the following variables:
+1. **Edit ["Traffic_Counting.py"](Traffic_Counting.py)**: Open "Traffic_Counting.py" and set the following variables:
     * `model_path`: Path to the YOLO model.
     * `video_path`: Path to the input video.
     * `out_put_video_path`: Path to the output video.
