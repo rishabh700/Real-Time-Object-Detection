@@ -26,14 +26,14 @@ conda activate yolov11
 ### Configuration
 
 1. **Edit `Traffic_Counting.py`**: Open `Traffic_Counting.py` and set the following variables:
-    * `model_path`: Path to the YOLO model.
+    * `model_path`: Path to the YOLO model. #model fill will be automatically downloaded if not already found in the repo
     * `video_path`: Path to the input video.
     * `out_put_video_path`: Path to the output video.
     * `output_csv`: Path to the output CSV.
 
 Example:
 ```python
-model_path = "yolo11n.pt"
+model_path = "yolo11n.pt" # Auto-downloaded if not in the repository
 video_path = r"C:\path\to\input\video.mp4"
 out_put_video_path = r"C:\path\to\output\video.avi"
 output_csv = r"C:\path\to\output\output.csv"
