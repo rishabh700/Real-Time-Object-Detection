@@ -1,7 +1,0 @@
-opencv-python
-numpy
-torch
-ultralytics
-filterpy
-scipy
-numba
