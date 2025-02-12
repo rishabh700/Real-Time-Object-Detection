@@ -1,0 +1,12 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore output files
+test_data/
+*.csv
+*.avi
+*.mp4
+
+# Ignore model files
+*.pt
