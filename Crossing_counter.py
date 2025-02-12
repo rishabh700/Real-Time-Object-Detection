@@ -14,7 +14,7 @@ class RealTimeTrafficCounter:
         self.output_csv = output_csv
         self.output_video = output_video
         self.line_coords = line_coords
-        self.device = "cuda" if torch.backends.cuda.is_available() else "cpu"
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
         # Load YOLO model
         self.model = YOLO(self.model_path).to(self.device)
@@ -139,12 +139,16 @@ class RealTimeTrafficCounter:
             prev_time = curr_time
 
             processed_frame = self.process_frame(frame, frame_number, fps)
-            cv2.imshow("Real-Time Traffic Tracking", processed_frame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
+            #cv2.imshow("Real-Time Traffic Tracking", processed_frame)
+            #if cv2.waitKey(1) & 0xFF == ord('q'):
+            #    break
 
         cap.release()
         cv2.destroyAllWindows()
+
+        # Release the video writer
+        if self.writer is not None:
+            self.writer.release()
 
     def _iou(self, boxA, boxB):
         xA = max(boxA[0], boxB[0])
